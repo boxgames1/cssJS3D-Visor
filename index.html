@@ -1,75 +1,14 @@
-<html>
+<html class="">
 <head>
-<title>cssJS3D</title>
+<title>CSS JS 3D Visor</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="HandheldFriendly" content="true">
+<meta name="author" content="Oliver Alonso">
 
-  <meta charset="UTF-8">
-
-  <script src="https://production-assets.codepen.io/assets/common/cookie_used_reload-ad47fd0c6e26ac84e84e95272cddc82a26caa7342cea5c006434d4bbb69d7b44.js"></script>
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@github">
-  <meta name="twitter:title" content="cssJs3D Visor">
-  <meta name="twitter:description" content="cssJs3D Visor">
-  <meta name="twitter:creator" content="@oliver_ap">
-
-  <meta property="og:title" content="cssJs3D">
-  <meta property="og:url" content="https://github.com/boxgames1/cssjs3D">
-  <meta property="og:site_name" content="GitHub">
-  <meta property="og:description" content="cssJS3D Visor">
-
-  <link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=http://codepen.io/ge1doot/pen/GgOYoy&amp;format=json" title="apparently transparent">
-
-  <link href="//fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic" rel="stylesheet">
-
-  <link rel="stylesheet" media="all" href="https://production-assets.codepen.io/assets/global/global-NoMQ-6e3654b1b9c4db8147db6a7789162e7cc45068b2ae9e816bb11774c06a07eaae.css">
-  <link rel="stylesheet" media="all" href="https://production-assets.codepen.io/assets/editor/editor-c454d238c2adad29db912070936f8f55783d587146126fa3439c7ffe3319fd15.css">
-
-  
-  <meta name="description" content="cssJS3D Visor">
-
-  
-
-
-<link rel="stylesheet" media="screen" href="https://production-assets.codepen.io/assets/editor/themes/twilight-913694f984ee6a61665648153e2c73cc43af641fe5b14faca0bb1a6febfa9358.css" id="cm-theme">
-
-<style id="cm-font-family" class="cm-font-family">
-  
-  .CodeMirror,
-  .console-logs .console-line,
-  .console-command-line-input,
-  .console-message,
-  .CodeMirror-hint {
-    font-family: Monaco, MonoSpace;
-  }
-</style>
-
-<style id="cm-font-size">
-  .CodeMirror,
-  .console-logs .console-line,
-  .console-command-line-input,
-  .console-message,
-  .CodeMirror-hint {
-    font-size: 14px;
-  }
-</style>
 <script>
 
-var ge1doot = ge1doot || {
-	/*
-	         \|||/
-	         (o o)
-	+~~~~ooO~~(_)~~~~~~~~+
-	| Please             |
-	| don't feed the     |
-	| TROLLS !           |
-	+~~~~~~~~~~~~~~Ooo~~~+
-	        |__|__|
-	         || ||
-	        ooO Ooo
-	*/
-	
+var ge1doot = ge1doot || {	
 	screen: {
 		elem:     null,
 		callback: null,
@@ -168,8 +107,8 @@ var ge1doot = ge1doot || {
 }
 
 </script>
-<style>
-html {
+
+<style class="cp-pen-styles">html {
   touch-action: none;
   content-zooming: none;
 }
@@ -221,52 +160,50 @@ body {
   width: 252px;
   height: 600px;
   margin: -300px -126px;
-}
-</style>
+}</style>
 </head>
 <body>
 <div id="screen">
   <div id="scene">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="translateZ(-1500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="translateZ(-1000px) rotateY(-90deg) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="translateZ(-1000px) rotateY(90deg) translateZ(-500px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/kader-mur-bois-lumiere-big.jpg" data-transform="translateZ(-1000px) rotateX(90deg) translateZ(-300px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/subtlegrunge5.jpg" data-transform="translateZ(-1000px) rotateX(-90deg) translateZ(-300px)">
+    <img src="002_3000x2844n.jpg" data-transform="translateZ(-1500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateZ(-1500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="translateZ(-1000px) rotateY(-90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateZ(-1000px) rotateY(-90deg) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="translateZ(-1000px) rotateY(90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateZ(-1000px) rotateY(90deg) translateZ(-500px); visibility: visible;">
+    <img class="f" src="kader-mur-bois-lumiere-big.jpg" data-transform="translateZ(-1000px) rotateX(90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateZ(-1000px) rotateX(90deg) translateZ(-300px); visibility: visible;">
+    <img class="f" src="subtlegrunge5.jpg" data-transform="translateZ(-1000px) rotateX(-90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateZ(-1000px) rotateX(-90deg) translateZ(-300px); visibility: visible;">
 
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="translateX(-1000px) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="translateX(-1000px) rotateY(90deg) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="translateX(-1000px) rotateY(180deg) translateZ(-500px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/kader-mur-bois-lumiere-big.jpg" data-transform="translateX(-1000px) rotateX(90deg) translateZ(-300px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/subtlegrunge5.jpg" data-transform="translateX(-1000px) rotateX(-90deg) translateZ(-300px)">
+    <img src="002_3000x2844n.jpg" data-transform="translateX(-1000px) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateX(-1000px) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="translateX(-1000px) rotateY(90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateX(-1000px) rotateY(90deg) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="translateX(-1000px) rotateY(180deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateX(-1000px) rotateY(180deg) translateZ(-500px); visibility: visible;">
+    <img class="f" src="kader-mur-bois-lumiere-big.jpg" data-transform="translateX(-1000px) rotateX(90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateX(-1000px) rotateX(90deg) translateZ(-300px); visibility: visible;">
+    <img class="f" src="subtlegrunge5.jpg" data-transform="translateX(-1000px) rotateX(-90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateX(-1000px) rotateX(-90deg) translateZ(-300px); visibility: visible;">
 
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="rotateY(180deg) translateZ(-1500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateY(-90deg) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateY(90deg) translateZ(-500px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/kader-mur-bois-lumiere-big.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateX(90deg) translateZ(-300px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/subtlegrunge5.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateX(-90deg) translateZ(-300px)">
+    <img src="002_3000x2844n.jpg" data-transform="rotateY(180deg) translateZ(-1500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateZ(-1500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateY(-90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateZ(-1000px) rotateY(-90deg) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateY(90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateZ(-1000px) rotateY(90deg) translateZ(-500px); visibility: visible;">
+    <img class="f" src="kader-mur-bois-lumiere-big.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateX(90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateZ(-1000px) rotateX(90deg) translateZ(-300px); visibility: visible;">
+    <img class="f" src="subtlegrunge5.jpg" data-transform="rotateY(180deg) translateZ(-1000px) rotateX(-90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateZ(-1000px) rotateX(-90deg) translateZ(-300px); visibility: visible;">
 
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="rotateY(180deg) translateX(-1000px) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateY(90deg) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateY(180deg) translateZ(-500px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/kader-mur-bois-lumiere-big.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateX(90deg) translateZ(-300px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/subtlegrunge5.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateX(-90deg) translateZ(-300px)">
+    <img src="002_3000x2844n.jpg" data-transform="rotateY(180deg) translateX(-1000px) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateX(-1000px) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateY(90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateX(-1000px) rotateY(90deg) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateY(180deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateX(-1000px) rotateY(180deg) translateZ(-500px); visibility: visible;">
+    <img class="f" src="kader-mur-bois-lumiere-big.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateX(90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateX(-1000px) rotateX(90deg) translateZ(-300px); visibility: visible;">
+    <img class="f" src="subtlegrunge5.jpg" data-transform="rotateY(180deg) translateX(-1000px) rotateX(-90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateX(-1000px) rotateX(-90deg) translateZ(-300px); visibility: visible;">
 
-    <img class="s" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/psd3.png" data-transform="translateZ(-1000px)">
-    <img class="s" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/psd3.png" data-transform="rotateY(180deg) translateZ(-1000px)">
-    <img class="s" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/psd3.png" data-transform="rotateY(90deg) translateZ(-1000px)">
-    <img class="s" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/psd3.png" data-transform="rotateY(-90deg) translateZ(-1000px)">
+    <img class="s" src="psd3.png" data-transform="translateZ(-1000px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateZ(-1000px); visibility: visible;">
+    <img class="s" src="psd3.png" data-transform="rotateY(180deg) translateZ(-1000px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateZ(-1000px); visibility: visible;">
+    <img class="s" src="psd3.png" data-transform="rotateY(90deg) translateZ(-1000px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(90deg) translateZ(-1000px); visibility: visible;">
+    <img class="s" src="psd3.png" data-transform="rotateY(-90deg) translateZ(-1000px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(-90deg) translateZ(-1000px); visibility: visible;">
 
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.png" data-transform="translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.png" data-transform="rotateY(-90deg) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.png" data-transform="rotateY(90deg) translateZ(-500px)">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/002_3000x2844n.png" data-transform="rotateY(180deg) translateZ(-500px)">
+    <img src="002_3000x2844n.png" data-transform="translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.png" data-transform="rotateY(-90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(-90deg) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.png" data-transform="rotateY(90deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(90deg) translateZ(-500px); visibility: visible;">
+    <img src="002_3000x2844n.png" data-transform="rotateY(180deg) translateZ(-500px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateY(180deg) translateZ(-500px); visibility: visible;">
 
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/kader-mur-bois-lumiere.jpg" data-transform="rotateX(90deg) translateZ(-300px)">
-    <img class="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/subtlegrunge5.jpg" data-transform="rotateX(-90deg) translateZ(-300px)">
+    <img class="f" src="kader-mur-bois-lumiere.jpg" data-transform="rotateX(90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateX(90deg) translateZ(-300px); visibility: visible;">
+    <img class="f" src="subtlegrunge5.jpg" data-transform="rotateX(-90deg) translateZ(-300px)" style="transform: perspective(419.964px) rotateX(34.9883deg) rotateY(178.472deg) translateX(-29.6167px) translateY(114.682px) translateZ(-239.865px) rotateX(-90deg) translateZ(-300px); visibility: visible;">
   </div>
 </div>
-<script>
-! function() {
+<script>! function() {
   // ==== on load ====
   window.addEventListener('load', function() {
     "use strict";
@@ -363,6 +300,7 @@ body {
     requestAnimationFrame(run);
   }, false);
 }();
+//# sourceURL=pen.js
 </script>
 </body>
 </html>
